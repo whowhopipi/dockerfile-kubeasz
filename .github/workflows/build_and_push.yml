@@ -20,7 +20,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - version: 3.6.6
+          - version: 3.6.7
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
