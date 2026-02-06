@@ -20,5 +20,6 @@ RUN set -x \
     && ln -s -f /usr/local/bin/python3.11 /usr/bin/python3 \
     && mkdir -p /usr/libexec \
     && ln -s /usr/bin/python3 /usr/libexec/platform-python \
+    && apk add sshpass \
     # Cleaning
     && rm -rf ./"$KUBEASZ_VER".tar.gz
